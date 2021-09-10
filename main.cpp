@@ -1,6 +1,10 @@
-#include <iostream>
+//Current main function: run all tests from "bitmapTests.cpp"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+#include "Bitmap/bitmap.h"
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+	cout << argv[0] << "\nHello, World!";
     return 0;
 }
