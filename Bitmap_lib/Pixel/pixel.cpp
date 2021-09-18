@@ -17,7 +17,7 @@ Pixel::Pixel(uint8_t R, uint8_t G, uint8_t B) {
 /*Constructor: Pixel(color)
  * initialize Pixel with a Color equal to the parameter Color
 */
-Pixel::Pixel(const Color & color) {
+Pixel::Pixel(const RGB & color) {
     Pixel::color = new RGB(color);
 }
 
@@ -42,7 +42,7 @@ void Pixel::setColor(uint8_t color[3]) {
 /*setColor(color):
  * Sets the color equal to the RGB equivalent of the color parameter
 */
-void Pixel::setColor(const Color & color) {
+void Pixel::setColor(const RGB & color) {
     delete Pixel::color;
     Pixel::color = new RGB(color);
 }

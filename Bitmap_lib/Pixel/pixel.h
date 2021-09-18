@@ -10,14 +10,14 @@ public:
 
     //Constructors:
     Pixel();
-    explicit Pixel(const Color & color);
+    explicit Pixel(const RGB & color);
     Pixel(uint8_t R, uint8_t G, uint8_t B);
 
     //Destructor:
     ~Pixel();
 
     //Setter functions:
-    void setColor(const Color & color);
+    void setColor(const RGB & color);
     void setColor(uint8_t color[3]);
     void setColor(uint8_t R, uint8_t G, uint8_t B);
 

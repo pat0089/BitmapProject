@@ -63,8 +63,8 @@ void Bitmap::toGrayScale() {
     int tempHeight = infoHeader.getHeight();
     for (int i = 0; i < tempHeight; i++) {
         for (int j = 0; j < tempWidth; j++) {
-            auto a = (uint8_t)(pixelMap[i][j].getColor().L()*255);
-            pixelMap[i][j].setColor(a, a, a);
+            //auto a = (uint8_t)(pixelMap[i][j].getColor().L()*255);
+            //pixelMap[i][j].setColor(a, a, a);
         }
     }
 }

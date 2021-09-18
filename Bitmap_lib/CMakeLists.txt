@@ -7,7 +7,6 @@ set(HEADER_FILES
         Header/byteheader.h
         Pixel/pixel.h
         Pixel/pixelmap.h
-        Color/color.h
         Color/RGB/rgb.h
         Color/HSL/HSL.h
         )
@@ -20,7 +19,6 @@ set(SOURCE_FILES
         Header/byteheader.cpp
         Pixel/pixel.cpp
         Pixel/pixelmap.cpp
-        Color/color.cpp
         Color/RGB/rgb.cpp
         Color/HSL/hsl.cpp
         )
