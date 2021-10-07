@@ -9,8 +9,6 @@
 #include "../Pixel/pixelmap.h"
 #include "Bitmap_Headers/bitmapheaders.h"
 /*TODO (new):
- * override R, G, B, H, S, L setter and getter functions in HSL & RGB
- * look over Pixel, PixelMap, Color, RGB, & HSL to potentially add helper functions and operators, optimize a bit, and practice SOLID OOP principles
  * implement Selection object to act as a indexable subspace within the PixelMap object to be able to do manipulation functions
  * implement manipulation functions as function pointers to be applied to all Pixels of a PixelMap or Selection in a PixelMap
  * implement Masks as a wrapper for modification & selection functionality, implemented as a stack ultimately in the main program for undo/redo functionality
@@ -19,19 +17,8 @@
 */
 
  /* TODO (old):
+ - implement manipulation functions listed in the README
  - implement manipulation functions as masks for easy redo and undo of manipulation
- - Manipulation functions
-    >wobble (vertical and horizontal)
-    >transparent mask replacing a color
-    >add impact font stamp filter
-    >standard image manipulation functions:
-       stretch/shrink - will have to be made using
-       brightness/contrast - to be implemented using the HSL class for adjustment
-       saturation - to be implemented using the HSL class for adjustment
- - add support for 32 bit images for alpha adjustments
-
-  may be scrapped as it is potentially out of the scope of this project due to printer gamuts and such:
- - add support for CMYK color description and manipulation functions
     >Possibly implement a full color space and conversion library (CIELab, XYZ, CMYK, etc.)
 */
 
