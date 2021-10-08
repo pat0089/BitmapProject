@@ -3,8 +3,8 @@
  * HSL representation of color values of a Pixel
 */
 
-#ifndef BITMAP_TEST_HSL_H
-#define BITMAP_TEST_HSL_H
+#ifndef BITMAPPROJECT_HSL_H
+#define BITMAPPROJECT_HSL_H
 #include "../RGB/rgb.h"
 
 class RGB;
@@ -36,4 +36,4 @@ private:
 };
 
 
-#endif //BITMAP_TEST_HSL_H
+#endif //BITMAPPROJECT_HSL_H

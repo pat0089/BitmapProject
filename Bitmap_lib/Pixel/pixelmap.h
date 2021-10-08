@@ -1,8 +1,8 @@
 /*Class: PixelMap
  * a clean dynamic 2D array of Pixel objects to do operations on
 */
-#ifndef BITMAP_TEST_PIXELARRAY_H
-#define BITMAP_TEST_PIXELARRAY_H
+#ifndef BITMAPPROJECT_PIXELMAP_H
+#define BITMAPPROJECT_PIXELMAP_H
 #include "pixel.h"
 
 class PixelMap {
@@ -25,15 +25,11 @@ public:
     friend std::ostream& operator<<(std::ostream& os, const PixelMap& pm);
     friend std::istream& operator>>(std::istream& is, PixelMap& pm);
 
-    //function to run a Pixel manipulation function on each Pixel
-    //function to run a PixelArray manipulation function on the whole array
-
 private:
 
     int width, height;
     Pixel ** pixelData;
 
 };
-
 
 #endif //BITMAP_TEST_PIXELARRAY_H

@@ -2,8 +2,8 @@
  * a Header class that stores bytes of data
  * Can possibly be used with multiple different image file formats
 */
-#ifndef BITMAP_TEST_BYTEHEADER_H
-#define BITMAP_TEST_BYTEHEADER_H
+#ifndef BITMAPPROJECT_BYTEHEADER_H
+#define BITMAPPROJECT_BYTEHEADER_H
 #include <iostream>
 class ByteHeader {
 public:
@@ -33,4 +33,4 @@ protected:
 
 };
 
-#endif //BITMAP_TEST_BYTEHEADER_H
+#endif //BITMAPPROJECT_BYTEHEADER_H

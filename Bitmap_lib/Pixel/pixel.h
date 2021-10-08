@@ -1,8 +1,8 @@
 /*Class: Pixel
  * Holds the Color of a representative pixel from an image file
 */
-#ifndef BITMAP_TEST_PIXEL_H
-#define BITMAP_TEST_PIXEL_H
+#ifndef BITMAPPROJECT_PIXEL_H
+#define BITMAPPROJECT_PIXEL_H
 #include <iostream>
 #include "../Color/colortypes.h"
 class Pixel {
@@ -33,4 +33,4 @@ private:
 
 };
 
-#endif //BITMAP_TEST_PIXEL_H
+#endif //BITMAPPROJECT_PIXEL_H

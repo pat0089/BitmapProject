@@ -2,8 +2,8 @@
  *  holds an image from a file in '.BMP' format
 */
 
-#ifndef BITMAP_TEST_BITMAP_H
-#define BITMAP_TEST_BITMAP_H
+#ifndef BITMAPPROJECT_BITMAP_H
+#define BITMAPPROJECT_BITMAP_H
 #include <iostream>
 #include <string>
 #include "../Pixel/pixelmap.h"
@@ -75,4 +75,4 @@ void test4();
 void test5();
 void test6();
 
-#endif //BITMAP_TEST_BITMAP_H
+#endif //BITMAPPROJECT_BITMAP_H
