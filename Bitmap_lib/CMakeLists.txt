@@ -9,6 +9,7 @@ set(HEADER_FILES
         Pixel/pixelmap.h
         Color/RGB/rgb.h
         Color/HSL/HSL.h
+        Modification/selection.h
         )
 
 set(SOURCE_FILES
@@ -21,6 +22,7 @@ set(SOURCE_FILES
         Pixel/pixelmap.cpp
         Color/RGB/rgb.cpp
         Color/HSL/hsl.cpp
+        Modification/selection.cpp
         )
 
 add_library(Bitmap_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
