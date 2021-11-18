@@ -104,3 +104,10 @@ std::ostream &operator<<(std::ostream &os, const PixelMap &pm) {
     }
     return os;
 }
+
+//SelectionMask():
+//Returns a new Selection object that is the same dimensions as this object, with no pixels selected
+Selection & PixelMap::SelectionMask() const {
+    Selection * toReturn = new Selection(width, height);
+    return *toReturn;
+}

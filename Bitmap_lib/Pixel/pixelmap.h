@@ -4,6 +4,7 @@
 #ifndef BITMAPPROJECT_PIXELMAP_H
 #define BITMAPPROJECT_PIXELMAP_H
 #include "pixel.h"
+#include "../Modification/selection.h"
 
 class PixelMap {
 public:
@@ -25,6 +26,9 @@ public:
     friend std::ostream& operator<<(std::ostream& os, const PixelMap& pm);
     friend std::istream& operator>>(std::istream& is, PixelMap& pm);
 
+    //Selection
+    Selection & SelectionMask() const;
+
 private:
 
     int width, height;
@@ -32,4 +36,4 @@ private:
 
 };
 
-#endif //BITMAP_TEST_PIXELARRAY_H
+#endif //BITMAPPROJECT_PIXELMAP_H

@@ -46,12 +46,15 @@ public:
     void deselectCircle(pair<int, int> point1, pair<int, int> point2);
 
     //Overloaded operators for Selection manipulation:
-    Selection operator+(const Selection & rhs) const;
-    Selection operator-(const Selection & rhs) const;
-    Selection operator^(const Selection & rhs) const;
-    Selection operator|(const Selection & rhs) const;
-    Selection operator-() const;
-    Selection operator!() const;
+    friend Selection operator+(const Selection & lhs, const Selection & rhs);
+    friend Selection operator-(const Selection & lhs, const Selection & rhs);
+    friend Selection operator|(const Selection & lhs, const Selection & rhs);
+    friend Selection operator&(const Selection & lhs, const Selection & rhs);
+    friend Selection operator^(const Selection & lhs, const Selection & rhs);
+
+    friend Selection operator-(const Selection & rhs);
+    friend Selection operator!(const Selection & rhs);
+
     bool operator==(const Selection & rhs) const;
     bool operator!=(const Selection & rhs) const;
     bool operator<(const Selection & rhs) const;
@@ -69,7 +72,9 @@ private:
     int width, height;
     set<pair<int, int>> pointSet;
 
-    void setCoord(pair<int, int> toSet, bool val, pair<int, int> origin);
+    //Helper coordinate setting functions
+    void setCoordCartesian(pair<int, int> toSet, bool val, pair<int, int> origin);
+    void setCoord(pair<int, int> toSet, bool val);
 
 };
 
