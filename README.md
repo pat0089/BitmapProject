@@ -28,3 +28,5 @@ This project will eventually act as a shell that can be used while viewing a bit
 * Brightness/contrast - to be implemented using the HSL class for adjustment
 * Saturation - to be implemented using the HSL class for adjustment 
 * Alpha adjustment
+
+See Trello board for more plans: https://trello.com/b/zCrKDDtc/bitmapproject
